@@ -1,0 +1,453 @@
+<html>
+    <div class="adaptador">
+    <meta name = "viewpoint" content="width = device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+<meta http-equiv= "Content-Type" content = "html/text"; charset = "utf-8"/>
+    <title>
+        Fastmaths
+    </title>
+    
+    <head>
+        
+        <h1>
+		<div class = FASTMATH>
+           <b>FASTMATH</b> 
+		   </div>
+        </h1>
+    </head>
+    <body>
+        
+        <br><br><br>
+		<div class = CALCULADORABASICA>
+        <p><b>Calculadora basica</b></p>
+		</div>
+        <form action="">
+            <p>
+            <input type ="text" class = num1 id = "num1">
+            <input type ="text" class = num2 id = "num2">
+            <br><br>
+            
+            <input type ="button" value = "sumar" class = BOTONSUMA onclick="alert(sumar(num1,num2));">
+    <input type = "button" value = "restar" class = BOTONRESTA onclick = "alert(restar(num1,num2));">
+    <input type = "button" value = "multiplicar" class = BOTONMULTIPLICAR onclick="alert(multiplicar(num1,num2));">
+    <input type = "button" value = "dividir" class = BOTONDIVIDIR onclick = "alert(dividir(num1,num2));">
+    </form>
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        
+        <script>
+        function sumar(num1,num2){
+           var num1 = document.getElementById("num1").value;
+          var num2 = document.getElementById("num2").value;
+            return parseFloat(num1) + parseFloat(num2);
+        }
+      function restar(num1,num2){
+          var num1 = document.getElementById("num1").value;
+         var num2 = document.getElementById("num2").value;
+          return parseFloat(num1) - parseFloat(num2);
+      }
+      function multiplicar(num1,num2){
+          var num1 = document.getElementById("num1").value;
+          var num2 = document.getElementById("num2").value;
+          return parseFloat(num1) * parseFloat(num2);
+      }
+      function dividir(num1,num2){
+          var num1 = document.getElementById("num1").value;
+          var num2 = document.getElementById("num2").value;
+          return num1 / num2;
+      }
+      function areacuadrado(num3){
+            var num3 = document.getElementById("num3").value;
+            
+            return num3 * num3;
+      }
+      function arearectangulo(num5,num6){
+          var num5 = document.getElementById("num5").value;
+          var num6 = document.getElementById("num6").value;
+          return num5 * num6;
+      }
+          function areatriangulo(num7,num8){
+              var num7 = document.getElementById("num7").value;
+              var num8 = document.getElementById("num8").value;
+              return (parseFloat(num7) * parseFloat(num8))/2;
+          }
+          function arearombo(num9,num10){
+         var num9 = document.getElementById("num9").value;
+         var num10 = document.getElementById("num10").value;
+          return (parseFloat(num9) *parseFloat(num10))/2;
+          }
+		  document.getElementById("cuadrado").style;
+		  {
+		  color:green;
+		  }
+		  function areatrapecio(num11,num12,num13){
+		  
+		  var num11 = document.getElementById("num11").value;
+		  var num12 = document.getElementById("num12").value;
+		  var num13 = document.getElementById("num13").value;
+		  return ((parseFloat(num11) + parseFloat(num12))/2)*parseFloat(num13);
+		  
+		  }
+		 
+		  
+		  
+		  function exponente(num14,num15){
+var num14 = document.getElementById("num14").value;
+		 var num15 = document.getElementById("num15").value;
+		    return  Math.pow(parseFloat(num14),parseFloat(num15));
+		      
+		  }
+		  
+        </script>
+        
+        
+        
+        
+        
+        
+    </body>
+    <br>
+	<div class = calculodeareas>
+    <p>calculo de areas</p>
+	</div>
+    <br>
+	<br>
+	
+    <div class = CUADRADO><p><b>CUADRADO</b></p></div>
+	<div class = LADOCUADRADO>
+    <p>introducir lado:</p>
+	</div>
+    <input type = "text" class = num3 id = "num3">
+    
+    <input type = "button" value = "resultado" class = CUADRADOBOTON onclick = "alert(areacuadrado(num3));">
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+	<div class = RECTANGULO>
+    <p><b>RECTANGULO</b></p>
+	</div>
+	<div class = ALTURATEXT>
+    <p>altura</p>
+	</div>
+
+    <input type = "text" class = num5 id= "num5">
+    <input type = "button" value="resultado" class = RECTANGULOBOTON onclick="alert(arearectangulo(num5,6))">
+	<div class = BASE>
+    <p>Base</p>
+	</div>
+      <input type ="text" class = num6 id="num6">
+    <br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+	<div class = TRIANGULO>
+    <p><b>TRIANGULO</b></p>
+	</div>
+	<div class = base>
+    <p>base</p>
+	</div>
+
+    <input type="text" class = num7 id="num7">
+<input type = "button" value="resultado" class = TRIANGULOBOTON onclick="alert(areatriangulo(num7,num8));">
+	<div class = altura>
+    <p>altura</p>
+	</div>
+    <input type="text" class = num8 id="num8">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+	<div class = ROMBO>
+    <p><b>ROMBO</b></p>
+	</div>
+	<div class = diagonalmayor>
+    <p>diagonal mayor</p>
+    </div>
+    <input type = "text" class = num9 id = "num9">
+
+    <input type = "button" value = "resultado" class = ROMBOBOTON onclick = "alert(arearombo(num9,num10));">
+	
+
+
+    <br>
+    <div class = diagonalmenor>
+    <p>diagonal menor</p>
+	</div>
+    <input type = "text" class = num10 id = "num10">
+    <br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+	<div class = trapecio>
+	<p><b>TRAPECIO</b></p>
+	</div>
+	<br>
+	<div class = basemayor>
+	<p>Base mayor</p>
+	</div>
+	
+	<input type = "text" id = "num11" class = num11>
+	<input type = "button" value = "resultado" class = TRAPECIOBOTON onclick = "alert(areatrapecio(num11,num12,num13));">
+	<div class = basemenor>
+	<p>Base menor</p>
+	</div>
+	<input type = "text" id = "num12" class = num12>
+	<div class = alturatrapecio>
+	<p>altura</p>
+	</div>
+	<input type = "text" id = "num13" class = num13>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<hr>
+	<br>
+	<br>
+	
+	<div class ="Exponente">
+	<p><b>EXPONENTE</b></p>
+	
+
+ </div>
+ <br>
+ <div class="intronumero">
+	<p>Introduce un numero</p>
+	</div>
+	<input type="text" id="num14" class="num14">
+ <input type="button" value="resultado" class="botonexponente"
+onclick="alert(exponente(num14,num15));">
+    <br><br><br><br>
+    <br>
+    <div class="elevacion">
+    <p>A que lo quieres elevar?</p>
+    </div>
+    <input type ="text" id="num15" class="num15">
+    
+    
+    
+    
+    <br><br><br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <p>
+        version :0.12.0
+    </p>
+	<style>
+	body{
+	background-color:cyan;
+}
+button{
+	
+	color:green;
+}
+.CUADRADO,.RECTANGULO,.TRIANGULO,.ROMBO,.trapecio,.exponente{
+	background-color:#FF5733;
+	width:500px;
+	height:150px;
+	text-align:center;
+	position:relative;
+	left:220;
+	display:table-cell;
+	vertical-align:middle;
+	
+	border-radius:10px;
+	
+	font-size:70px;
+	
+	
+
+}
+.RECTANGULOBOTON{
+    font-size:50px;
+    position:relative;
+    left:350px;
+}
+hr{
+    height:10px;
+    background:blue;
+}
+
+.LADOCUADRADO,.intronumero,.elevacion{
+    position:relative;
+    left:100px;
+    font-size:40px;
+    
+}
+.FASTMATH{
+	background:orange;
+	border:solid;
+	width:1000px;
+	height:300px;
+	text-align:center;
+	position:center;
+	
+	vertical-align:middle;
+
+	left:100px;
+	font-size:100px;
+	display:table-cell;
+	
+	border-radius:20px;
+	
+}
+.calculodeareas{
+	background-color:#3359FF;
+	font-size:70px;
+	width:800px;
+	height:200px;
+	position:relative;
+	left:70px;
+	text-align:center;
+	display:table-cell;
+	vertical-align:middle;
+	border-radius:20px;
+	
+}
+//.RECTANGULO{
+	background:#FF5733;
+	font-size:22px;
+	width:160px;
+	position:relative;
+	left:350;
+	border-radius:20px;
+	text-align:center;
+}
+//.Exponente{
+	background:#FF5733;
+	font-size:22px;
+	width:500px;
+	position:relative;
+	left:350;
+	border-radius:20px;
+	text-align:center;
+}
+//.trapecio{
+	background:#FF5733;
+	font-size:22px;
+	width:450px;
+	height:70px;
+	border-radius:20px;
+	text-align:center;
+	position:relative;
+	left:350;
+}
+.CALCULADORABASICA{
+	background:#33FF52;
+	font-size:50px;
+	width:800px;
+	height:200px;
+	border-radius:20px;
+	
+	text-align:center;
+	position:relative;
+	display:table-cell;
+	vertical-align:middle;
+	left:70px;
+}
+
+.diagonalmayor,.altura,.num8,.num7,.base,.diagonalmenor,.num10,.num9,.num6,.BASE,.num5{
+	position:relative;
+	left:100;
+	font-size:30px;
+	}
+	.altura,.ALTURATEXT{
+	    position:relative;
+	    left:100px;
+	    font-size:40px;
+	}
+.num3,.CUADRADOBOTON,.num1,.num2,.BOTONSUMA,.BOTONRESTA,.BOTONMULTIPLICAR,.BOTONDIVIDIR,.botonexponente{
+	position:relative;
+	left:350;
+	font-size:50px;
+	
+}
+
+.trapecio{
+	
+}
+.botonexponente{
+    position:relative;
+    left:100px;
+    font-size:40px;
+    width:190px;
+    height:70px;
+}
+.basemayor,.num11,.TRAPECIOBOTON,.basemenor,.num12,.num13,.alturatrapecio{
+	position:relative;
+	font-size:40px;
+	left:100px;
+}
+
+        .adaptador{
+            width:100%;
+            
+            overflow:hidden;
+            max-width:2000px;
+        }
+        .num1,.num2,.num3,.num4,.num5,.num6,.num7,.num8,.num9,.num10,.num11,.num12,.num13,.num14,.num15{
+            width:400px;
+            position:relative;
+            left:75px;
+            height:60px;
+            font-size:50px;
+            
+        }
+        .BOTONSUMA,.BOTONRESTA,.BOTONDIVIDIR,.BOTONMULTIPLICAR,.CUADRADOBOTON,.RECTANGULOBOTON,.ROMBOBOTON,.TRAPECIOBOTON,.TRIANGULOBOTON{
+            width:190px;
+            height:70px;
+            position:relative;
+            left:90px;
+            display:table-cell;
+            vertical-align:middle;
+            text-align:center;
+            font-size:40px;
+            bottom:10px;
+            
+        }
+        .RECTANGULOBOTON{
+            font-size:40px;
+        }
+        .BOTONMULTIPLICAR{
+            font-size:30px;
+            position:relative;
+            bottom:10px;
+        }
+
+
+
+	</style>
+    </div>
+</html>
